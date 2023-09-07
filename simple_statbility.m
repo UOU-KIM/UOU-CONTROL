@@ -16,6 +16,9 @@ vP = lmivar(1, [n, 1]);
 
 %% Step 3: Lmi description
 nlmi = nlmi +1;
+lmiterm( [-nlmi, 1, 1, vP], 1, 1);
+
+nlmi = nlmi +1;
 lmiterm( [nlmi, 1, 1, vP], 1, A, 's');
 
 %% Step 4: Lmi solver
